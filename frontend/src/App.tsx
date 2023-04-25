@@ -68,7 +68,7 @@ function App() {
       <div className="flex flex-row mb-4 w-full overflow-x-auto">
         {/* <button className="tab focus:outline-none border-b-2 border-gray-300 dark:border-gray-700 py-2 px-4 mx-2">Tab 1</button> */}
         {validRoutes.map((curroute, index) => {
-          return <button key={index} className={`focus:outline-none border-b-2 border-gray-300 dark:border-gray-700 py-2 px-4 mx-2 ${curroute === route ? "border-blue-500 dark:border-blue-500" : ""}`} onClick={() => setRoute(curroute)}>{routeNames[curroute]}</button>
+          return <button key={index} className={`focus:outline-none border-b-2 py-2 px-4 mx-2 ${curroute === route ? "border-blue-500 dark:border-blue-500" : "border-gray-300 dark:border-gray-700"}`} onClick={() => setRoute(curroute)}>{routeNames[curroute]}</button>
         })}
       </div>
       {
