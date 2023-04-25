@@ -39,6 +39,7 @@ function App() {
   useEffect(() => {
     setIsLoading(true)
     setUserData([])
+    if(route==="top10CitiesWithHighestNumberOfUsersAndAverageIncome") return;
     setError("")
     fetch(`${import.meta.env.VITE_SERVERBASEURL}/users/${route}`).then(res => res.json()).then(data => {
       setUserData(data)
