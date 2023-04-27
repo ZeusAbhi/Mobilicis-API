@@ -2,7 +2,7 @@
 > Internship Project
 
 # Front-End Stack
-+ React-Vite JS
++ React-Vite TS
 + TailWind CSS
 + TypeScript
 
